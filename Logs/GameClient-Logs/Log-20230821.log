@@ -1,0 +1,4 @@
+2023-08-21 16:48:11.930 +04:00 [INF] Application started : {"deviceId":"a484ce69-2b1b-4f03-92c5-bc9db67aef8d"}
+2023-08-21 16:48:11.979 +04:00 [INF] Connecting to the server : {"deviceId":"a484ce69-2b1b-4f03-92c5-bc9db67aef8d"}
+2023-08-21 16:48:12.467 +04:00 [INF] Connected to the server : {"deviceId":"a484ce69-2b1b-4f03-92c5-bc9db67aef8d"}
+2023-08-21 16:48:12.468 +04:00 [INF] Listening server : {"deviceId":"a484ce69-2b1b-4f03-92c5-bc9db67aef8d"}

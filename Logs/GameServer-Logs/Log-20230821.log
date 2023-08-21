@@ -1,0 +1,225 @@
+2023-08-21 12:04:16.041 +04:00 [INF] Now listening on: http://localhost:5053
+2023-08-21 12:04:16.097 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-08-21 12:04:16.101 +04:00 [INF] Hosting environment: Development
+2023-08-21 12:04:16.103 +04:00 [INF] Content root path: C:\Users\Seymur\source\repos\custom\Game\Game.Server\
+2023-08-21 12:04:16.627 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5053/ - -
+2023-08-21 12:04:16.761 +04:00 [INF] Executing endpoint '/ HTTP: GET'
+2023-08-21 12:04:16.774 +04:00 [INF] Executed endpoint '/ HTTP: GET'
+2023-08-21 12:04:16.794 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5053/ - - - 200 - - 177.6502ms
+2023-08-21 12:04:17.133 +04:00 [INF] Request starting HTTP/1.1 GET http://127.0.0.1:5053/ws-game - -
+2023-08-21 12:04:17.151 +04:00 [INF] Websocket request recieved
+2023-08-21 12:04:17.323 +04:00 [INF] Client connected : {"socketId":"e1e3103b-f0bb-4643-a7dd-89c5ec7aa2a8"}
+2023-08-21 12:04:48.199 +04:00 [INF] Message received from client : {"socketId":"e1e3103b-f0bb-4643-a7dd-89c5ec7aa2a8","message":"{\"MessageType\":\"Login\",\"MessageBody\":\"{\\\"DeviceId\\\":\\\"2e3ed8e1-5ddd-4cfe-9aa2-d5020c0ee8ca\\\"}\"}"}
+2023-08-21 12:04:48.246 +04:00 [INF] Message deserialized : {"socketId":"e1e3103b-f0bb-4643-a7dd-89c5ec7aa2a8","socketMessage":{"MessageType":1,"MessageBody":"{\"DeviceId\":\"2e3ed8e1-5ddd-4cfe-9aa2-d5020c0ee8ca\"}"}
+2023-08-21 12:04:48.248 +04:00 [INF] Handler starting to execute : {"socketId":"e1e3103b-f0bb-4643-a7dd-89c5ec7aa2a8","socketMessage":{"MessageType":1,"MessageBody":"{\"DeviceId\":\"2e3ed8e1-5ddd-4cfe-9aa2-d5020c0ee8ca\"}"}
+2023-08-21 12:04:48.253 +04:00 [INF] Login Message deserialized : {"socketId":"e1e3103b-f0bb-4643-a7dd-89c5ec7aa2a8","parsedBody":{"DeviceId":"2e3ed8e1-5ddd-4cfe-9aa2-d5020c0ee8ca"}}
+2023-08-21 12:04:48.259 +04:00 [INF] Login Player added to db : {"socketId":"e1e3103b-f0bb-4643-a7dd-89c5ec7aa2a8","playerId":"ca40cfad-03e4-413a-9c14-e29535bd41fd","DeviceId":"2e3ed8e1-5ddd-4cfe-9aa2-d5020c0ee8ca"}
+2023-08-21 12:04:48.265 +04:00 [INF] Message sent to the client : {"Data":"{\"IsSucceed\":true,\"Data\":{\"MessageType\":\"Login\",\"PlayerId\":\"ca40cfad-03e4-413a-9c14-e29535bd41fd\"},\"ErrorMessage\":null}"}
+2023-08-21 12:04:48.267 +04:00 [INF] Login handler successfully executed : {"socketId":"e1e3103b-f0bb-4643-a7dd-89c5ec7aa2a8","playerId":"ca40cfad-03e4-413a-9c14-e29535bd41fd","DeviceId":"2e3ed8e1-5ddd-4cfe-9aa2-d5020c0ee8ca"}
+2023-08-21 12:04:48.268 +04:00 [INF] Handler executed : {"socketId":"e1e3103b-f0bb-4643-a7dd-89c5ec7aa2a8","socketMessage":{"MessageType":1,"MessageBody":"{\"DeviceId\":\"2e3ed8e1-5ddd-4cfe-9aa2-d5020c0ee8ca\"}"}
+2023-08-21 12:06:07.246 +04:00 [INF] Message received from client : {"socketId":"e1e3103b-f0bb-4643-a7dd-89c5ec7aa2a8","message":"{\"MessageType\":\"UpdateResources\",\"MessageBody\":\"{\\\"ResourceType\\\":\\\"Coins\\\",\\\"ResourceValue\\\":\\\"120\\\"}\"}"}
+2023-08-21 12:06:07.248 +04:00 [INF] Message deserialized : {"socketId":"e1e3103b-f0bb-4643-a7dd-89c5ec7aa2a8","socketMessage":{"MessageType":2,"MessageBody":"{\"ResourceType\":\"Coins\",\"ResourceValue\":\"120\"}"}
+2023-08-21 12:06:07.250 +04:00 [INF] Handler starting to execute : {"socketId":"e1e3103b-f0bb-4643-a7dd-89c5ec7aa2a8","socketMessage":{"MessageType":2,"MessageBody":"{\"ResourceType\":\"Coins\",\"ResourceValue\":\"120\"}"}
+2023-08-21 12:06:07.269 +04:00 [INF] UpdateResources Message deserialized : {"socketId":"e1e3103b-f0bb-4643-a7dd-89c5ec7aa2a8","parsedBody":{"ResourceType":"Coins","ResourceValue":120}}
+2023-08-21 12:06:07.281 +04:00 [INF] UpdateResources PlayerState : {"socketId":"e1e3103b-f0bb-4643-a7dd-89c5ec7aa2a8","playerState":{"PlayerId":"ca40cfad-03e4-413a-9c14-e29535bd41fd","Resources":{}}
+2023-08-21 12:06:07.287 +04:00 [INF] UpdateResources Player balance : {"socketId":"e1e3103b-f0bb-4643-a7dd-89c5ec7aa2a8","playerState":{"PlayerId":"ca40cfad-03e4-413a-9c14-e29535bd41fd","Resources":{}}
+2023-08-21 12:06:07.293 +04:00 [INF] Message sent to the client : {"Data":"{\"IsSucceed\":true,\"Data\":{\"MessageType\":\"UpdateResources\",\"ResourceType\":\"Coins\",\"ResourceValue\":120},\"ErrorMessage\":null}"}
+2023-08-21 12:06:07.297 +04:00 [INF] UpdateResources Player balance changed : {"socketId":"e1e3103b-f0bb-4643-a7dd-89c5ec7aa2a8","playerState":{"PlayerId":"ca40cfad-03e4-413a-9c14-e29535bd41fd","Resources":{"Coins":120}}
+2023-08-21 12:06:07.299 +04:00 [INF] Handler executed : {"socketId":"e1e3103b-f0bb-4643-a7dd-89c5ec7aa2a8","socketMessage":{"MessageType":2,"MessageBody":"{\"ResourceType\":\"Coins\",\"ResourceValue\":\"120\"}"}
+2023-08-21 12:07:00.531 +04:00 [INF] Request starting HTTP/1.1 GET http://127.0.0.1:5053/ws-game - -
+2023-08-21 12:07:00.533 +04:00 [INF] Websocket request recieved
+2023-08-21 12:07:00.535 +04:00 [INF] Client connected : {"socketId":"43722e6a-b164-4b53-b702-545afb152cfa"}
+2023-08-21 12:07:03.730 +04:00 [INF] Message received from client : {"socketId":"43722e6a-b164-4b53-b702-545afb152cfa","message":"{\"MessageType\":\"Login\",\"MessageBody\":\"{\\\"DeviceId\\\":\\\"910e37a6-066b-480e-91c4-dd05c99de5ae\\\"}\"}"}
+2023-08-21 12:07:03.731 +04:00 [INF] Message deserialized : {"socketId":"43722e6a-b164-4b53-b702-545afb152cfa","socketMessage":{"MessageType":1,"MessageBody":"{\"DeviceId\":\"910e37a6-066b-480e-91c4-dd05c99de5ae\"}"}
+2023-08-21 12:07:03.733 +04:00 [INF] Handler starting to execute : {"socketId":"43722e6a-b164-4b53-b702-545afb152cfa","socketMessage":{"MessageType":1,"MessageBody":"{\"DeviceId\":\"910e37a6-066b-480e-91c4-dd05c99de5ae\"}"}
+2023-08-21 12:07:03.734 +04:00 [INF] Login Message deserialized : {"socketId":"43722e6a-b164-4b53-b702-545afb152cfa","parsedBody":{"DeviceId":"910e37a6-066b-480e-91c4-dd05c99de5ae"}}
+2023-08-21 12:07:03.735 +04:00 [INF] Login Player added to db : {"socketId":"43722e6a-b164-4b53-b702-545afb152cfa","playerId":"b265d4da-f382-48b8-ba73-5271355a46a9","DeviceId":"910e37a6-066b-480e-91c4-dd05c99de5ae"}
+2023-08-21 12:07:03.737 +04:00 [INF] Message sent to the client : {"Data":"{\"IsSucceed\":true,\"Data\":{\"MessageType\":\"Login\",\"PlayerId\":\"b265d4da-f382-48b8-ba73-5271355a46a9\"},\"ErrorMessage\":null}"}
+2023-08-21 12:07:03.739 +04:00 [INF] Login handler successfully executed : {"socketId":"43722e6a-b164-4b53-b702-545afb152cfa","playerId":"b265d4da-f382-48b8-ba73-5271355a46a9","DeviceId":"910e37a6-066b-480e-91c4-dd05c99de5ae"}
+2023-08-21 12:07:03.740 +04:00 [INF] Handler executed : {"socketId":"43722e6a-b164-4b53-b702-545afb152cfa","socketMessage":{"MessageType":1,"MessageBody":"{\"DeviceId\":\"910e37a6-066b-480e-91c4-dd05c99de5ae\"}"}
+2023-08-21 12:07:41.640 +04:00 [INF] Message received from client : {"socketId":"e1e3103b-f0bb-4643-a7dd-89c5ec7aa2a8","message":"{\"MessageType\":\"SendGift\",\"MessageBody\":\"{\\\"FriendPlayerId\\\":\\\"b265d4da-f382-48b8-ba73-5271355a46a9\\\",\\\"ResourceType\\\":\\\"Coins\\\",\\\"ResourceValue\\\":\\\"115\\\"}\"}"}
+2023-08-21 12:07:41.643 +04:00 [INF] Message deserialized : {"socketId":"e1e3103b-f0bb-4643-a7dd-89c5ec7aa2a8","socketMessage":{"MessageType":3,"MessageBody":"{\"FriendPlayerId\":\"b265d4da-f382-48b8-ba73-5271355a46a9\",\"ResourceType\":\"Coins\",\"ResourceValue\":\"115\"}"}
+2023-08-21 12:07:41.645 +04:00 [INF] Handler starting to execute : {"socketId":"e1e3103b-f0bb-4643-a7dd-89c5ec7aa2a8","socketMessage":{"MessageType":3,"MessageBody":"{\"FriendPlayerId\":\"b265d4da-f382-48b8-ba73-5271355a46a9\",\"ResourceType\":\"Coins\",\"ResourceValue\":\"115\"}"}
+2023-08-21 12:07:41.652 +04:00 [INF] SendGift Message deserialized : {"socketId":"e1e3103b-f0bb-4643-a7dd-89c5ec7aa2a8","parsedBody":{"FriendPlayerId":"b265d4da-f382-48b8-ba73-5271355a46a9","ResourceType":"Coins","ResourceValue":115}}
+2023-08-21 12:07:41.655 +04:00 [INF] SendGift PlayerState : {"socketId":"e1e3103b-f0bb-4643-a7dd-89c5ec7aa2a8","sendingPlayerState":{"PlayerId":"ca40cfad-03e4-413a-9c14-e29535bd41fd","Resources":{"Coins":120}}
+2023-08-21 12:07:41.660 +04:00 [INF] SendGift Friend PlayerState : {"socketId":"e1e3103b-f0bb-4643-a7dd-89c5ec7aa2a8","friendPlayerState":{"PlayerId":"b265d4da-f382-48b8-ba73-5271355a46a9","Resources":{}}
+2023-08-21 12:07:41.662 +04:00 [INF] Message sent to the client : {"Data":"{\"IsSucceed\":true,\"Data\":{\"MessageType\":\"GiftEvent\",\"ResourceType\":\"Coins\",\"ResourceValue\":115},\"ErrorMessage\":null}"}
+2023-08-21 12:07:41.664 +04:00 [INF] GiftEvent sent to the friend : {"socketId":"e1e3103b-f0bb-4643-a7dd-89c5ec7aa2a8"}
+2023-08-21 12:07:41.666 +04:00 [INF] Message sent to the client : {"Data":"{\"IsSucceed\":true,\"Data\":{\"MessageType\":\"SendGift\",\"ResourceType\":\"Coins\",\"ResourceValue\":5},\"ErrorMessage\":null}"}
+2023-08-21 12:07:41.669 +04:00 [INF] SendGift Players balance changed : {"socketId":"e1e3103b-f0bb-4643-a7dd-89c5ec7aa2a8","senderBalance":5,"friendBalance":115}
+2023-08-21 12:07:41.670 +04:00 [INF] Handler executed : {"socketId":"e1e3103b-f0bb-4643-a7dd-89c5ec7aa2a8","socketMessage":{"MessageType":3,"MessageBody":"{\"FriendPlayerId\":\"b265d4da-f382-48b8-ba73-5271355a46a9\",\"ResourceType\":\"Coins\",\"ResourceValue\":\"115\"}"}
+2023-08-21 12:08:34.656 +04:00 [INF] Client disconnected : {"socketId":"e1e3103b-f0bb-4643-a7dd-89c5ec7aa2a8"}
+2023-08-21 12:19:22.471 +04:00 [INF] Now listening on: http://localhost:5053
+2023-08-21 12:19:22.515 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-08-21 12:19:22.518 +04:00 [INF] Hosting environment: Development
+2023-08-21 12:19:22.519 +04:00 [INF] Content root path: C:\Users\Seymur\source\repos\custom\Game\Game.Server\
+2023-08-21 12:19:22.988 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5053/ - -
+2023-08-21 12:19:23.249 +04:00 [INF] Executing endpoint '/ HTTP: GET'
+2023-08-21 12:19:23.267 +04:00 [INF] Executed endpoint '/ HTTP: GET'
+2023-08-21 12:19:23.374 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5053/ - - - 200 - - 391.2851ms
+2023-08-21 12:19:23.606 +04:00 [INF] Request starting HTTP/1.1 GET http://127.0.0.1:5053/ws-game - -
+2023-08-21 12:19:23.620 +04:00 [INF] Websocket request recieved
+2023-08-21 12:19:23.797 +04:00 [INF] Client connected : {"socketId":"e3967f4f-9110-4ee8-94df-d343df7ed7b3"}
+2023-08-21 12:19:48.662 +04:00 [INF] Now listening on: http://localhost:5053
+2023-08-21 12:19:48.706 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-08-21 12:19:48.710 +04:00 [INF] Hosting environment: Development
+2023-08-21 12:19:48.712 +04:00 [INF] Content root path: C:\Users\Seymur\source\repos\custom\Game\Game.Server\
+2023-08-21 12:19:49.351 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5053/ - -
+2023-08-21 12:19:49.441 +04:00 [INF] Executing endpoint '/ HTTP: GET'
+2023-08-21 12:19:49.449 +04:00 [INF] Executed endpoint '/ HTTP: GET'
+2023-08-21 12:19:49.466 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5053/ - - - 200 - - 118.5867ms
+2023-08-21 12:20:49.511 +04:00 [INF] Now listening on: http://localhost:5053
+2023-08-21 12:20:49.637 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-08-21 12:20:49.641 +04:00 [INF] Hosting environment: Development
+2023-08-21 12:20:49.646 +04:00 [INF] Content root path: C:\Users\Seymur\source\repos\custom\Game\Game.Server\
+2023-08-21 12:20:50.127 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5053/ - -
+2023-08-21 12:20:50.279 +04:00 [INF] Executing endpoint '/ HTTP: GET'
+2023-08-21 12:20:50.289 +04:00 [INF] Executed endpoint '/ HTTP: GET'
+2023-08-21 12:20:50.307 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5053/ - - - 200 - - 201.3123ms
+2023-08-21 12:20:50.345 +04:00 [INF] Request starting HTTP/1.1 GET http://127.0.0.1:5053/ws-game - -
+2023-08-21 12:20:50.362 +04:00 [INF] Websocket request recieved
+2023-08-21 12:20:50.554 +04:00 [INF] Client connected : {"socketId":"28ef6596-e7db-493a-b32e-799085efae7a"}
+2023-08-21 12:21:13.663 +04:00 [INF] Now listening on: http://localhost:5053
+2023-08-21 12:21:13.707 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-08-21 12:21:13.710 +04:00 [INF] Hosting environment: Development
+2023-08-21 12:21:13.713 +04:00 [INF] Content root path: C:\Users\Seymur\source\repos\custom\Game\Game.Server\
+2023-08-21 12:21:14.386 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5053/ - -
+2023-08-21 12:21:14.473 +04:00 [INF] Executing endpoint '/ HTTP: GET'
+2023-08-21 12:21:14.482 +04:00 [INF] Executed endpoint '/ HTTP: GET'
+2023-08-21 12:21:14.498 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5053/ - - - 200 - - 116.5335ms
+2023-08-21 12:23:13.261 +04:00 [INF] Now listening on: http://localhost:5053
+2023-08-21 12:23:13.313 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-08-21 12:23:13.317 +04:00 [INF] Hosting environment: Development
+2023-08-21 12:23:13.319 +04:00 [INF] Content root path: C:\Users\Seymur\source\repos\custom\Game\Game.Server\
+2023-08-21 12:23:13.621 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5053/ - -
+2023-08-21 12:23:13.707 +04:00 [INF] Executing endpoint '/ HTTP: GET'
+2023-08-21 12:23:13.717 +04:00 [INF] Executed endpoint '/ HTTP: GET'
+2023-08-21 12:23:13.733 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5053/ - - - 200 - - 115.8848ms
+2023-08-21 12:23:16.514 +04:00 [INF] Request starting HTTP/1.1 GET http://127.0.0.1:5053/ws-game - -
+2023-08-21 12:23:16.530 +04:00 [INF] Websocket request recieved
+2023-08-21 12:25:01.096 +04:00 [INF] Now listening on: http://localhost:5053
+2023-08-21 12:25:01.148 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-08-21 12:25:01.152 +04:00 [INF] Hosting environment: Development
+2023-08-21 12:25:01.154 +04:00 [INF] Content root path: C:\Users\Seymur\source\repos\custom\Game\Game.Server\
+2023-08-21 12:25:01.528 +04:00 [INF] Request starting HTTP/1.1 GET http://127.0.0.1:5053/ws-game - -
+2023-08-21 12:25:01.614 +04:00 [INF] Websocket request recieved
+2023-08-21 12:25:01.729 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5053/ - -
+2023-08-21 13:21:58.632 +04:00 [INF] Now listening on: http://localhost:5053
+2023-08-21 13:21:58.685 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-08-21 13:21:58.689 +04:00 [INF] Hosting environment: Development
+2023-08-21 13:21:58.691 +04:00 [INF] Content root path: C:\Users\Seymur\source\repos\custom\Game\Game.Server\
+2023-08-21 13:21:59.417 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5053/ - -
+2023-08-21 13:21:59.511 +04:00 [INF] Executing endpoint '/ HTTP: GET'
+2023-08-21 13:21:59.519 +04:00 [INF] Executed endpoint '/ HTTP: GET'
+2023-08-21 13:21:59.535 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5053/ - - - 200 - - 122.5857ms
+2023-08-21 13:22:57.923 +04:00 [INF] Now listening on: http://localhost:5053
+2023-08-21 13:22:58.070 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-08-21 13:22:58.075 +04:00 [INF] Hosting environment: Development
+2023-08-21 13:22:58.078 +04:00 [INF] Content root path: C:\Users\Seymur\source\repos\custom\Game\Game.Server\
+2023-08-21 13:22:58.505 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5053/ - -
+2023-08-21 13:22:58.610 +04:00 [INF] Executing endpoint '/ HTTP: GET'
+2023-08-21 13:22:58.619 +04:00 [INF] Executed endpoint '/ HTTP: GET'
+2023-08-21 13:22:58.637 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5053/ - - - 200 - - 147.3316ms
+2023-08-21 13:22:59.341 +04:00 [INF] Request starting HTTP/1.1 GET http://127.0.0.1:5053/ws-game - -
+2023-08-21 13:22:59.360 +04:00 [INF] Websocket request recieved
+2023-08-21 13:22:59.557 +04:00 [INF] Client connected : {"socketId":"e74452f8-5c66-4d77-8928-f429fc3a007b"}
+2023-08-21 13:23:01.486 +04:00 [INF] Message received from client : {"socketId":"e74452f8-5c66-4d77-8928-f429fc3a007b","message":"{\"MessageType\":\"Login\",\"MessageBody\":\"{\\\"DeviceId\\\":\\\"b2dd6440-53a0-4eee-a7c7-fd705c0fa67b\\\"}\"}"}
+2023-08-21 13:23:01.530 +04:00 [INF] Message deserialized : {"socketId":"e74452f8-5c66-4d77-8928-f429fc3a007b","socketMessage":{"MessageType":1,"MessageBody":"{\"DeviceId\":\"b2dd6440-53a0-4eee-a7c7-fd705c0fa67b\"}"}
+2023-08-21 13:23:01.532 +04:00 [INF] Handler starting to execute : {"socketId":"e74452f8-5c66-4d77-8928-f429fc3a007b","socketMessage":{"MessageType":1,"MessageBody":"{\"DeviceId\":\"b2dd6440-53a0-4eee-a7c7-fd705c0fa67b\"}"}
+2023-08-21 13:23:01.538 +04:00 [INF] Login Message deserialized : {"socketId":"e74452f8-5c66-4d77-8928-f429fc3a007b","parsedBody":{"DeviceId":"b2dd6440-53a0-4eee-a7c7-fd705c0fa67b"}}
+2023-08-21 13:23:01.545 +04:00 [INF] Login Player added to db : {"socketId":"e74452f8-5c66-4d77-8928-f429fc3a007b","playerId":"2a732015-b4b5-4bdd-9a0a-c3d0d546584b","DeviceId":"b2dd6440-53a0-4eee-a7c7-fd705c0fa67b"}
+2023-08-21 13:23:01.551 +04:00 [INF] Message sent to the client : {"Data":"{\"IsSucceed\":true,\"Data\":{\"MessageType\":\"Login\",\"PlayerId\":\"2a732015-b4b5-4bdd-9a0a-c3d0d546584b\"},\"ErrorMessage\":null}"}
+2023-08-21 13:23:01.552 +04:00 [INF] Login handler successfully executed : {"socketId":"e74452f8-5c66-4d77-8928-f429fc3a007b","playerId":"2a732015-b4b5-4bdd-9a0a-c3d0d546584b","DeviceId":"b2dd6440-53a0-4eee-a7c7-fd705c0fa67b"}
+2023-08-21 13:23:01.554 +04:00 [INF] Handler executed : {"socketId":"e74452f8-5c66-4d77-8928-f429fc3a007b","socketMessage":{"MessageType":1,"MessageBody":"{\"DeviceId\":\"b2dd6440-53a0-4eee-a7c7-fd705c0fa67b\"}"}
+2023-08-21 13:23:16.672 +04:00 [INF] Message received from client : {"socketId":"e74452f8-5c66-4d77-8928-f429fc3a007b","message":"{\"MessageType\":\"UpdateResources\",\"MessageBody\":\"{\\\"ResourceType\\\":\\\"Coins\\\",\\\"ResourceValue\\\":\\\"123\\\"}\"}"}
+2023-08-21 13:23:16.675 +04:00 [INF] Message deserialized : {"socketId":"e74452f8-5c66-4d77-8928-f429fc3a007b","socketMessage":{"MessageType":2,"MessageBody":"{\"ResourceType\":\"Coins\",\"ResourceValue\":\"123\"}"}
+2023-08-21 13:23:16.677 +04:00 [INF] Handler starting to execute : {"socketId":"e74452f8-5c66-4d77-8928-f429fc3a007b","socketMessage":{"MessageType":2,"MessageBody":"{\"ResourceType\":\"Coins\",\"ResourceValue\":\"123\"}"}
+2023-08-21 13:23:16.688 +04:00 [INF] UpdateResources Message deserialized : {"socketId":"e74452f8-5c66-4d77-8928-f429fc3a007b","parsedBody":{"ResourceType":"Coins","ResourceValue":123}}
+2023-08-21 13:23:16.700 +04:00 [INF] UpdateResources PlayerState : {"socketId":"e74452f8-5c66-4d77-8928-f429fc3a007b","playerState":{"PlayerId":"2a732015-b4b5-4bdd-9a0a-c3d0d546584b","Resources":{}}
+2023-08-21 13:23:16.706 +04:00 [INF] UpdateResources Player balance : {"socketId":"e74452f8-5c66-4d77-8928-f429fc3a007b","playerState":{"PlayerId":"2a732015-b4b5-4bdd-9a0a-c3d0d546584b","Resources":{}}
+2023-08-21 13:23:16.712 +04:00 [INF] Message sent to the client : {"Data":"{\"IsSucceed\":true,\"Data\":{\"MessageType\":\"UpdateResources\",\"ResourceType\":\"Coins\",\"ResourceValue\":123},\"ErrorMessage\":null}"}
+2023-08-21 13:23:16.716 +04:00 [INF] UpdateResources Player balance changed : {"socketId":"e74452f8-5c66-4d77-8928-f429fc3a007b","playerState":{"PlayerId":"2a732015-b4b5-4bdd-9a0a-c3d0d546584b","Resources":{"Coins":123}}
+2023-08-21 13:23:16.719 +04:00 [INF] Handler executed : {"socketId":"e74452f8-5c66-4d77-8928-f429fc3a007b","socketMessage":{"MessageType":2,"MessageBody":"{\"ResourceType\":\"Coins\",\"ResourceValue\":\"123\"}"}
+2023-08-21 13:23:30.326 +04:00 [INF] Request starting HTTP/1.1 GET http://127.0.0.1:5053/ws-game - -
+2023-08-21 13:23:30.329 +04:00 [INF] Websocket request recieved
+2023-08-21 13:23:30.331 +04:00 [INF] Client connected : {"socketId":"13922892-71d8-4ae3-a339-a2829248bc49"}
+2023-08-21 13:23:33.019 +04:00 [INF] Message received from client : {"socketId":"13922892-71d8-4ae3-a339-a2829248bc49","message":"{\"MessageType\":\"Login\",\"MessageBody\":\"{\\\"DeviceId\\\":\\\"c9ca5f9c-93c5-40a3-b296-7f9cc82d0c52\\\"}\"}"}
+2023-08-21 13:23:33.021 +04:00 [INF] Message deserialized : {"socketId":"13922892-71d8-4ae3-a339-a2829248bc49","socketMessage":{"MessageType":1,"MessageBody":"{\"DeviceId\":\"c9ca5f9c-93c5-40a3-b296-7f9cc82d0c52\"}"}
+2023-08-21 13:23:33.023 +04:00 [INF] Handler starting to execute : {"socketId":"13922892-71d8-4ae3-a339-a2829248bc49","socketMessage":{"MessageType":1,"MessageBody":"{\"DeviceId\":\"c9ca5f9c-93c5-40a3-b296-7f9cc82d0c52\"}"}
+2023-08-21 13:23:33.024 +04:00 [INF] Login Message deserialized : {"socketId":"13922892-71d8-4ae3-a339-a2829248bc49","parsedBody":{"DeviceId":"c9ca5f9c-93c5-40a3-b296-7f9cc82d0c52"}}
+2023-08-21 13:23:33.025 +04:00 [INF] Login Player added to db : {"socketId":"13922892-71d8-4ae3-a339-a2829248bc49","playerId":"98391692-6b5b-4f5a-8732-d25361b3623d","DeviceId":"c9ca5f9c-93c5-40a3-b296-7f9cc82d0c52"}
+2023-08-21 13:23:33.027 +04:00 [INF] Message sent to the client : {"Data":"{\"IsSucceed\":true,\"Data\":{\"MessageType\":\"Login\",\"PlayerId\":\"98391692-6b5b-4f5a-8732-d25361b3623d\"},\"ErrorMessage\":null}"}
+2023-08-21 13:23:33.028 +04:00 [INF] Login handler successfully executed : {"socketId":"13922892-71d8-4ae3-a339-a2829248bc49","playerId":"98391692-6b5b-4f5a-8732-d25361b3623d","DeviceId":"c9ca5f9c-93c5-40a3-b296-7f9cc82d0c52"}
+2023-08-21 13:23:33.029 +04:00 [INF] Handler executed : {"socketId":"13922892-71d8-4ae3-a339-a2829248bc49","socketMessage":{"MessageType":1,"MessageBody":"{\"DeviceId\":\"c9ca5f9c-93c5-40a3-b296-7f9cc82d0c52\"}"}
+2023-08-21 13:23:43.686 +04:00 [INF] Message received from client : {"socketId":"e74452f8-5c66-4d77-8928-f429fc3a007b","message":"{\"MessageType\":\"SendGift\",\"MessageBody\":\"{\\\"FriendPlayerId\\\":\\\"ffdfd\\\",\\\"ResourceType\\\":\\\"Coins\\\",\\\"ResourceValue\\\":\\\"12\\\"}\"}"}
+2023-08-21 13:23:43.687 +04:00 [INF] Message deserialized : {"socketId":"e74452f8-5c66-4d77-8928-f429fc3a007b","socketMessage":{"MessageType":3,"MessageBody":"{\"FriendPlayerId\":\"ffdfd\",\"ResourceType\":\"Coins\",\"ResourceValue\":\"12\"}"}
+2023-08-21 13:23:43.689 +04:00 [INF] Handler starting to execute : {"socketId":"e74452f8-5c66-4d77-8928-f429fc3a007b","socketMessage":{"MessageType":3,"MessageBody":"{\"FriendPlayerId\":\"ffdfd\",\"ResourceType\":\"Coins\",\"ResourceValue\":\"12\"}"}
+2023-08-21 13:23:43.695 +04:00 [INF] SendGift Message deserialized : {"socketId":"e74452f8-5c66-4d77-8928-f429fc3a007b","parsedBody":{"FriendPlayerId":"ffdfd","ResourceType":"Coins","ResourceValue":12}}
+2023-08-21 13:23:43.699 +04:00 [INF] SendGift PlayerState : {"socketId":"e74452f8-5c66-4d77-8928-f429fc3a007b","sendingPlayerState":{"PlayerId":"2a732015-b4b5-4bdd-9a0a-c3d0d546584b","Resources":{"Coins":123}}
+2023-08-21 13:23:43.701 +04:00 [INF] SendGift Friend PlayerState : {"socketId":"e74452f8-5c66-4d77-8928-f429fc3a007b","friendPlayerState":null}
+2023-08-21 13:23:43.704 +04:00 [INF] Message sent to the client : {"Data":"{\"IsSucceed\":false,\"Data\":{\"MessageType\":\"SendGift\"},\"ErrorMessage\":\"Player(s) not found.\"}"}
+2023-08-21 13:23:43.709 +04:00 [INF] Handler executed : {"socketId":"e74452f8-5c66-4d77-8928-f429fc3a007b","socketMessage":{"MessageType":3,"MessageBody":"{\"FriendPlayerId\":\"ffdfd\",\"ResourceType\":\"Coins\",\"ResourceValue\":\"12\"}"}
+2023-08-21 13:23:58.106 +04:00 [INF] Message received from client : {"socketId":"e74452f8-5c66-4d77-8928-f429fc3a007b","message":"{\"MessageType\":\"SendGift\",\"MessageBody\":\"{\\\"FriendPlayerId\\\":\\\"98391692-6b5b-4f5a-8732-d25361b3623d\\\",\\\"ResourceType\\\":\\\"Coins\\\",\\\"ResourceValue\\\":\\\"23\\\"}\"}"}
+2023-08-21 13:23:58.107 +04:00 [INF] Message deserialized : {"socketId":"e74452f8-5c66-4d77-8928-f429fc3a007b","socketMessage":{"MessageType":3,"MessageBody":"{\"FriendPlayerId\":\"98391692-6b5b-4f5a-8732-d25361b3623d\",\"ResourceType\":\"Coins\",\"ResourceValue\":\"23\"}"}
+2023-08-21 13:23:58.109 +04:00 [INF] Handler starting to execute : {"socketId":"e74452f8-5c66-4d77-8928-f429fc3a007b","socketMessage":{"MessageType":3,"MessageBody":"{\"FriendPlayerId\":\"98391692-6b5b-4f5a-8732-d25361b3623d\",\"ResourceType\":\"Coins\",\"ResourceValue\":\"23\"}"}
+2023-08-21 13:23:58.111 +04:00 [INF] SendGift Message deserialized : {"socketId":"e74452f8-5c66-4d77-8928-f429fc3a007b","parsedBody":{"FriendPlayerId":"98391692-6b5b-4f5a-8732-d25361b3623d","ResourceType":"Coins","ResourceValue":23}}
+2023-08-21 13:23:58.112 +04:00 [INF] SendGift PlayerState : {"socketId":"e74452f8-5c66-4d77-8928-f429fc3a007b","sendingPlayerState":{"PlayerId":"2a732015-b4b5-4bdd-9a0a-c3d0d546584b","Resources":{"Coins":123}}
+2023-08-21 13:23:58.115 +04:00 [INF] SendGift Friend PlayerState : {"socketId":"e74452f8-5c66-4d77-8928-f429fc3a007b","friendPlayerState":{"PlayerId":"98391692-6b5b-4f5a-8732-d25361b3623d","Resources":{}}
+2023-08-21 13:23:58.117 +04:00 [INF] Message sent to the client : {"Data":"{\"IsSucceed\":true,\"Data\":{\"MessageType\":\"GiftEvent\",\"ResourceType\":\"Coins\",\"ResourceValue\":23},\"ErrorMessage\":null}"}
+2023-08-21 13:23:58.119 +04:00 [INF] GiftEvent sent to the friend : {"socketId":"e74452f8-5c66-4d77-8928-f429fc3a007b"}
+2023-08-21 13:23:58.121 +04:00 [INF] Message sent to the client : {"Data":"{\"IsSucceed\":true,\"Data\":{\"MessageType\":\"SendGift\",\"ResourceType\":\"Coins\",\"ResourceValue\":100},\"ErrorMessage\":null}"}
+2023-08-21 13:23:58.124 +04:00 [INF] SendGift Players balance changed : {"socketId":"e74452f8-5c66-4d77-8928-f429fc3a007b","senderBalance":100,"friendBalance":23}
+2023-08-21 13:23:58.125 +04:00 [INF] Handler executed : {"socketId":"e74452f8-5c66-4d77-8928-f429fc3a007b","socketMessage":{"MessageType":3,"MessageBody":"{\"FriendPlayerId\":\"98391692-6b5b-4f5a-8732-d25361b3623d\",\"ResourceType\":\"Coins\",\"ResourceValue\":\"23\"}"}
+2023-08-21 16:39:33.429 +04:00 [INF] Now listening on: http://localhost:5053
+2023-08-21 16:39:33.478 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-08-21 16:39:33.482 +04:00 [INF] Hosting environment: Development
+2023-08-21 16:39:33.485 +04:00 [INF] Content root path: C:\Users\Seymur\source\repos\custom\Game\Game.Server\
+2023-08-21 16:39:34.151 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5053/ - -
+2023-08-21 16:39:34.266 +04:00 [INF] Executing endpoint '/ HTTP: GET'
+2023-08-21 16:39:34.281 +04:00 [INF] Executed endpoint '/ HTTP: GET'
+2023-08-21 16:39:34.307 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5053/ - - - 200 - - 160.5166ms
+2023-08-21 16:39:34.897 +04:00 [INF] Request starting HTTP/1.1 GET http://127.0.0.1:5053/ws-game - -
+2023-08-21 16:39:34.920 +04:00 [INF] Websocket request recieved
+2023-08-21 16:39:35.265 +04:00 [INF] Client connected : {"socketId":"1accb175-916d-4433-a538-e07002abe8f7"}
+2023-08-21 16:46:45.549 +04:00 [INF] Now listening on: http://localhost:5053
+2023-08-21 16:46:45.661 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-08-21 16:46:45.666 +04:00 [INF] Hosting environment: Development
+2023-08-21 16:46:45.669 +04:00 [INF] Content root path: C:\Users\Seymur\source\repos\custom\Game\Game.Server\
+2023-08-21 16:46:46.073 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5053/ - -
+2023-08-21 16:46:46.161 +04:00 [INF] Executing endpoint '/ HTTP: GET'
+2023-08-21 16:46:46.170 +04:00 [INF] Executed endpoint '/ HTTP: GET'
+2023-08-21 16:46:46.188 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5053/ - - - 200 - - 118.2898ms
+2023-08-21 16:46:46.981 +04:00 [INF] Request starting HTTP/1.1 GET http://127.0.0.1:5053/ws-game - -
+2023-08-21 16:46:47.002 +04:00 [INF] Websocket request recieved
+2023-08-21 16:46:47.193 +04:00 [INF] Client connected : {"socketId":"051c5ae9-becf-4c28-8246-3af0c0506ccf"}
+2023-08-21 16:46:49.983 +04:00 [INF] Message received from client : {"socketId":"051c5ae9-becf-4c28-8246-3af0c0506ccf","message":"{\"MessageType\":\"Login\",\"MessageBody\":\"{\\\"DeviceId\\\":\\\"04af11d2-211b-4ca9-bf17-a4412d8df48d\\\"}\"}"}
+2023-08-21 16:46:50.027 +04:00 [INF] Message deserialized : {"socketId":"051c5ae9-becf-4c28-8246-3af0c0506ccf","socketMessage":{"MessageType":1,"MessageBody":"{\"DeviceId\":\"04af11d2-211b-4ca9-bf17-a4412d8df48d\"}"}
+2023-08-21 16:46:50.029 +04:00 [INF] Handler starting to execute : {"socketId":"051c5ae9-becf-4c28-8246-3af0c0506ccf","socketMessage":{"MessageType":1,"MessageBody":"{\"DeviceId\":\"04af11d2-211b-4ca9-bf17-a4412d8df48d\"}"}
+2023-08-21 16:46:50.035 +04:00 [INF] Login Message deserialized : {"socketId":"051c5ae9-becf-4c28-8246-3af0c0506ccf","parsedBody":{"DeviceId":"04af11d2-211b-4ca9-bf17-a4412d8df48d"}}
+2023-08-21 16:46:50.042 +04:00 [INF] Login Player added to db : {"socketId":"051c5ae9-becf-4c28-8246-3af0c0506ccf","playerId":"780d8c54-a762-46c7-8fcc-00b8cf614cc9","DeviceId":"04af11d2-211b-4ca9-bf17-a4412d8df48d"}
+2023-08-21 16:46:50.048 +04:00 [INF] Message sent to the client : {"Data":"{\"IsSucceed\":true,\"Data\":{\"MessageType\":\"Login\",\"PlayerId\":\"780d8c54-a762-46c7-8fcc-00b8cf614cc9\"},\"ErrorMessage\":null}"}
+2023-08-21 16:46:50.050 +04:00 [INF] Login handler successfully executed : {"socketId":"051c5ae9-becf-4c28-8246-3af0c0506ccf","playerId":"780d8c54-a762-46c7-8fcc-00b8cf614cc9","DeviceId":"04af11d2-211b-4ca9-bf17-a4412d8df48d"}
+2023-08-21 16:46:50.052 +04:00 [INF] Handler executed : {"socketId":"051c5ae9-becf-4c28-8246-3af0c0506ccf","socketMessage":{"MessageType":1,"MessageBody":"{\"DeviceId\":\"04af11d2-211b-4ca9-bf17-a4412d8df48d\"}"}
+2023-08-21 16:47:11.753 +04:00 [INF] Message received from client : {"socketId":"051c5ae9-becf-4c28-8246-3af0c0506ccf","message":"{\"MessageType\":\"UpdateResources\",\"MessageBody\":\"{\\\"ResourceType\\\":\\\"Rolls\\\",\\\"ResourceValue\\\":\\\"130\\\"}\"}"}
+2023-08-21 16:47:11.757 +04:00 [INF] Message deserialized : {"socketId":"051c5ae9-becf-4c28-8246-3af0c0506ccf","socketMessage":{"MessageType":2,"MessageBody":"{\"ResourceType\":\"Rolls\",\"ResourceValue\":\"130\"}"}
+2023-08-21 16:47:11.759 +04:00 [INF] Handler starting to execute : {"socketId":"051c5ae9-becf-4c28-8246-3af0c0506ccf","socketMessage":{"MessageType":2,"MessageBody":"{\"ResourceType\":\"Rolls\",\"ResourceValue\":\"130\"}"}
+2023-08-21 16:47:11.768 +04:00 [INF] UpdateResources Message deserialized : {"socketId":"051c5ae9-becf-4c28-8246-3af0c0506ccf","parsedBody":{"ResourceType":"Rolls","ResourceValue":130}}
+2023-08-21 16:47:11.780 +04:00 [INF] UpdateResources PlayerState : {"socketId":"051c5ae9-becf-4c28-8246-3af0c0506ccf","playerState":{"PlayerId":"780d8c54-a762-46c7-8fcc-00b8cf614cc9","Resources":{}}
+2023-08-21 16:47:11.785 +04:00 [INF] UpdateResources Player balance : {"socketId":"051c5ae9-becf-4c28-8246-3af0c0506ccf","playerState":{"PlayerId":"780d8c54-a762-46c7-8fcc-00b8cf614cc9","Resources":{}}
+2023-08-21 16:47:11.791 +04:00 [INF] Message sent to the client : {"Data":"{\"IsSucceed\":true,\"Data\":{\"MessageType\":\"UpdateResources\",\"ResourceType\":\"Rolls\",\"ResourceValue\":130},\"ErrorMessage\":null}"}
+2023-08-21 16:47:11.797 +04:00 [INF] UpdateResources Player balance changed : {"socketId":"051c5ae9-becf-4c28-8246-3af0c0506ccf","playerState":{"PlayerId":"780d8c54-a762-46c7-8fcc-00b8cf614cc9","Resources":{"Rolls":130}}
+2023-08-21 16:47:11.798 +04:00 [INF] Handler executed : {"socketId":"051c5ae9-becf-4c28-8246-3af0c0506ccf","socketMessage":{"MessageType":2,"MessageBody":"{\"ResourceType\":\"Rolls\",\"ResourceValue\":\"130\"}"}
+2023-08-21 16:48:03.147 +04:00 [INF] Client disconnected : {"socketId":"051c5ae9-becf-4c28-8246-3af0c0506ccf"}
+2023-08-21 16:48:03.207 +04:00 [ERR] Something went wrong
+2023-08-21 16:48:03.208 +04:00 [INF] Request finished HTTP/1.1 GET http://127.0.0.1:5053/ws-game - - - 101 - - 76227.5350ms
+2023-08-21 16:48:10.791 +04:00 [INF] Now listening on: http://localhost:5053
+2023-08-21 16:48:10.889 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-08-21 16:48:10.893 +04:00 [INF] Hosting environment: Development
+2023-08-21 16:48:10.896 +04:00 [INF] Content root path: C:\Users\Seymur\source\repos\custom\Game\Game.Server\
+2023-08-21 16:48:11.441 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5053/ - -
+2023-08-21 16:48:11.527 +04:00 [INF] Executing endpoint '/ HTTP: GET'
+2023-08-21 16:48:11.535 +04:00 [INF] Executed endpoint '/ HTTP: GET'
+2023-08-21 16:48:11.553 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5053/ - - - 200 - - 117.1624ms
+2023-08-21 16:48:12.400 +04:00 [INF] Request starting HTTP/1.1 GET http://127.0.0.1:5053/ws-game - -
+2023-08-21 16:48:12.420 +04:00 [INF] Websocket request recieved
+2023-08-21 16:48:12.600 +04:00 [INF] Client connected : {"socketId":"430d8171-53d7-4c7d-a23c-b6469f515624"}
