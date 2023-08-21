@@ -11,7 +11,10 @@ namespace GameClient
         static async Task Main(string[] args)
         {
             var logManager = new LogManager();
+
+            //If both project will run at the same time so This line wait for Game Server start process 
             Thread.Sleep(2000);
+
             var deviceId = Guid.NewGuid();
             try
             {
