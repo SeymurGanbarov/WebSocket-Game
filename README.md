@@ -9,5 +9,5 @@ This repository contains 2 project.
   Then you can type message-type such as Login, UpdateResources,SendGift then fill relevant inputs.
 
   ----------------------------------------------------------------------------------------------
-  Game.Server Logs located at /Game/Logs/GameServer-Logs
-  Game.Client Logs located at /Game/Logs/GameClient-Logs
+  Game.Server Logs located at /Game/Logs/GameServer-Logs.
+  Game.Client Logs located at /Game/Logs/GameClient-Logs.
