@@ -2,12 +2,7 @@
 using Game.Server.Enums;
 using Game.Server.Models;
 using Newtonsoft.Json;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Net.WebSockets;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Game.Server.Core
 {
@@ -16,7 +11,7 @@ namespace Game.Server.Core
         private readonly ILogger<BaseHandler> _logger;
         public UpdateResourcesHandler(ILogger<BaseHandler> logger) : base(logger)
         {
-            _logger=logger;
+            _logger = logger;
         }
         public async Task HandleAsync(Guid socketId, string messageBody, WebSocket socket, PlayerManager playerManager)
         {
@@ -62,7 +57,7 @@ namespace Game.Server.Core
                 var newBalance = currentBalance + parsedBody.ResourceValue;
                 playerState.Resources[resourceType] = newBalance;
 
-                await SendResponseAsync(socket, OperationResult.Succeed(new { MessageType = MessageType.UpdateResources.ToString().ToString(), ResourceType = parsedBody.ResourceType, ResourceValue = newBalance }));
+                await SendResponseAsync(socket, OperationResult.Succeed(new { MessageType = MessageType.UpdateResources.ToString().ToString(), parsedBody.ResourceType, ResourceValue = newBalance }));
 
                 LogInfo("UpdateResources Player balance changed", new { socketId, playerState });
 

@@ -2,12 +2,7 @@
 using Game.Server.Enums;
 using Game.Server.Models;
 using Newtonsoft.Json;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Net.WebSockets;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Game.Server.Core
 {
@@ -16,7 +11,7 @@ namespace Game.Server.Core
         private readonly ILogger<BaseHandler> _logger;
         public LoginHandler(ILogger<BaseHandler> logger) : base(logger)
         {
-            _logger=logger;
+            _logger = logger;
         }
         public async Task HandleAsync(Guid socketId, string messageBody, WebSocket socket, PlayerManager playerManager)
         {
@@ -24,11 +19,11 @@ namespace Game.Server.Core
             {
                 var parsedBody = JsonConvert.DeserializeObject<LoginMessage>(messageBody);
 
-                LogInfo("Login Message deserialized", new {socketId, parsedBody});
+                LogInfo("Login Message deserialized", new { socketId, parsedBody });
 
                 if (parsedBody == null || string.IsNullOrEmpty(parsedBody.DeviceId))
                 {
-                    await SendResponseAsync(socket, OperationResult.Failure("Invalid message format.", new {MessageType = MessageType.Login.ToString()}));
+                    await SendResponseAsync(socket, OperationResult.Failure("Invalid message format.", new { MessageType = MessageType.Login.ToString() }));
                     return;
                 }
 
@@ -52,9 +47,9 @@ namespace Game.Server.Core
                     LogInfo("Login Player added to db", new { socketId, playerId, parsedBody.DeviceId });
 
 
-                    await SendResponseAsync(socket,  OperationResult.Succeed(new { MessageType = MessageType.Login.ToString(), PlayerId = playerId }));
+                    await SendResponseAsync(socket, OperationResult.Succeed(new { MessageType = MessageType.Login.ToString(), PlayerId = playerId }));
 
-                    LogInfo("Login handler successfully executed", new {socketId,playerId, parsedBody.DeviceId });
+                    LogInfo("Login handler successfully executed", new { socketId, playerId, parsedBody.DeviceId });
                 }
             }
             catch (Exception ex)

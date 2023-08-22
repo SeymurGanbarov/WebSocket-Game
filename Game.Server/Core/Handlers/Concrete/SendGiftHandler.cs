@@ -2,12 +2,7 @@
 using Game.Server.Enums;
 using Game.Server.Models;
 using Newtonsoft.Json;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Net.WebSockets;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Game.Server.Core
 {
@@ -16,7 +11,7 @@ namespace Game.Server.Core
         private readonly ILogger<BaseHandler> _logger;
         public SendGiftHandler(ILogger<BaseHandler> logger) : base(logger)
         {
-            _logger=logger;
+            _logger = logger;
         }
         public async Task HandleAsync(Guid socketId, string messageBody, WebSocket socket, PlayerManager playerManager)
         {
@@ -24,7 +19,7 @@ namespace Game.Server.Core
             {
                 var parsedBody = JsonConvert.DeserializeObject<SendGiftMessage>(messageBody);
 
-                LogInfo("SendGift Message deserialized", new {socketId, parsedBody});
+                LogInfo("SendGift Message deserialized", new { socketId, parsedBody });
 
                 if (parsedBody == null || string.IsNullOrEmpty(parsedBody.FriendPlayerId) || string.IsNullOrEmpty(parsedBody.ResourceType) || parsedBody.ResourceValue <= 0)
                 {
@@ -77,13 +72,13 @@ namespace Game.Server.Core
 
                     if (friendSocketId != Guid.Empty)
                     {
-                        await SendResponseAsync(playerManager.GetSocket(friendSocketId), OperationResult.Succeed(new {MessageType = MessageType.GiftEvent.ToString(), ResourceType=resourceType.ToString(), ResourceValue=parsedBody.ResourceValue}));
+                        await SendResponseAsync(playerManager.GetSocket(friendSocketId), OperationResult.Succeed(new { MessageType = MessageType.GiftEvent.ToString(), ResourceType = resourceType.ToString(), parsedBody.ResourceValue }));
                         LogInfo("GiftEvent sent to the friend", new { socketId });
                     }
 
-                    await SendResponseAsync(socket, OperationResult.Succeed(new { MessageType = MessageType.SendGift.ToString(), ResourceType = parsedBody.ResourceType, ResourceValue = sendingPlayerState.Resources[resourceType] }));
+                    await SendResponseAsync(socket, OperationResult.Succeed(new { MessageType = MessageType.SendGift.ToString(), parsedBody.ResourceType, ResourceValue = sendingPlayerState.Resources[resourceType] }));
 
-                    LogInfo("SendGift Players balance changed", new { socketId, senderBalance= sendingPlayerState.Resources[resourceType], friendBalance = friendPlayerState.Resources[resourceType] });
+                    LogInfo("SendGift Players balance changed", new { socketId, senderBalance = sendingPlayerState.Resources[resourceType], friendBalance = friendPlayerState.Resources[resourceType] });
                 }
                 else
                 {

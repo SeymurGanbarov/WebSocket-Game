@@ -1,5 +1,4 @@
 ﻿using Newtonsoft.Json;
-using Serilog;
 using System.Net.WebSockets;
 using System.Text;
 
@@ -10,7 +9,7 @@ namespace Game.Server.Core
         private readonly ILogger<BaseHandler> _logger;
         public BaseHandler(ILogger<BaseHandler> logger)
         {
-            _logger=logger;
+            _logger = logger;
         }
 
         public void LogInfo(string message, object data)

@@ -8,7 +8,7 @@
 
         public static OperationResult Failure(string errorMessage, object data)
         {
-            return new OperationResult { IsSucceed= false, Data =data, ErrorMessage = errorMessage };
+            return new OperationResult { IsSucceed = false, Data = data, ErrorMessage = errorMessage };
         }
 
         public static OperationResult Succeed(object data)
