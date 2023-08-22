@@ -1173,11 +1173,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Seymur\\source\\repos\\custom\\Game\\Game.Server\\Game.Server.csproj",
+      "projectUniqueName": "C:\\Users\\Seymur\\Source\\Repos\\WebSocket-Game\\Game.Server\\Game.Server.csproj",
       "projectName": "Game.Server",
-      "projectPath": "C:\\Users\\Seymur\\source\\repos\\custom\\Game\\Game.Server\\Game.Server.csproj",
+      "projectPath": "C:\\Users\\Seymur\\Source\\Repos\\WebSocket-Game\\Game.Server\\Game.Server.csproj",
       "packagesPath": "C:\\Users\\Seymur\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Seymur\\source\\repos\\custom\\Game\\Game.Server\\obj\\",
+      "outputPath": "C:\\Users\\Seymur\\Source\\Repos\\WebSocket-Game\\Game.Server\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

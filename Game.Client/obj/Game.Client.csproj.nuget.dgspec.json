@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Seymur\\source\\repos\\custom\\Game\\Game.Client\\Game.Client.csproj": {}
+    "C:\\Users\\Seymur\\Source\\Repos\\WebSocket-Game\\Game.Client\\Game.Client.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Seymur\\source\\repos\\custom\\Game\\Game.Client\\Game.Client.csproj": {
+    "C:\\Users\\Seymur\\Source\\Repos\\WebSocket-Game\\Game.Client\\Game.Client.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Seymur\\source\\repos\\custom\\Game\\Game.Client\\Game.Client.csproj",
+        "projectUniqueName": "C:\\Users\\Seymur\\Source\\Repos\\WebSocket-Game\\Game.Client\\Game.Client.csproj",
         "projectName": "Game.Client",
-        "projectPath": "C:\\Users\\Seymur\\source\\repos\\custom\\Game\\Game.Client\\Game.Client.csproj",
+        "projectPath": "C:\\Users\\Seymur\\Source\\Repos\\WebSocket-Game\\Game.Client\\Game.Client.csproj",
         "packagesPath": "C:\\Users\\Seymur\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Seymur\\source\\repos\\custom\\Game\\Game.Client\\obj\\",
+        "outputPath": "C:\\Users\\Seymur\\Source\\Repos\\WebSocket-Game\\Game.Client\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
